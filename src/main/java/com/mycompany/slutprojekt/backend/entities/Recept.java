@@ -15,18 +15,38 @@ public class Recept {
     private String category;
     private String comment;
     private String ingredients;
+    private String description;
+    private String tutorial;
     private int likings;
 
-    public Recept(int id, String category, String comment, String ingredients, int likings) {
+    public Recept(int id, String category,String comment,String ingredients,String description, String tutorial, int likings) {
         this.id = id;
         this.category = category;
         this.comment = comment;
         this.ingredients = ingredients;
+        this.description = description;
+        this.tutorial = tutorial;
         this.likings = likings;
     }
 
     public Recept() {
         
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getTutorial() {
+        return tutorial;
+    }
+
+    public void setTutorial(String tutorial) {
+        this.tutorial = tutorial;
     }
 
     public int getId() {
