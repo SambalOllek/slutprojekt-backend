@@ -43,4 +43,14 @@ public class ReceptBean {
         }
         return recepten;
     }
+    public int addRecept(Recept recepten) {
+        try(Connection connection = ConnectionFactory.getConnection()) {
+            Statement stmt = connection.createStatement();
+            String sql = String.format("INSERT INTO `recepten` (`id`,`name`,`description`,`tutorial`) VALUES (NULL, '%s', '%s','%s')");
+            return stmt.executeUpdate(sql);
+        } catch(Exception e) {
+            System.out.println("Error " + e.getMessage());
+        }
+        return 0;
+    }
 }
