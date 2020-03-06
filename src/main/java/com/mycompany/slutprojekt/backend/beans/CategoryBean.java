@@ -32,6 +32,7 @@ public class CategoryBean {
         Category category = new Category();
         category.setId(data.getInt("id"));
         category.setName(data.getString("name"));
+        categories.add(category);
     }
 } catch (Exception e) {
             System.out.println("Error" + e.getMessage());

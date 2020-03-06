@@ -12,25 +12,27 @@ package com.mycompany.slutprojekt.backend.entities;
 public class Recept {
 
     private int id;
-    private String category;
-    private String comment;
-    private String ingredients;
+    private String name;
     private String description;
     private String tutorial;
-    private int likings;
 
-    public Recept(int id, String category,String comment,String ingredients,String description, String tutorial, int likings) {
+    public Recept(int id,String name, String description,String tutorial) {
         this.id = id;
-        this.category = category;
-        this.comment = comment;
-        this.ingredients = ingredients;
+        this.name = name;
         this.description = description;
         this.tutorial = tutorial;
-        this.likings = likings;
     }
 
     public Recept() {
         
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
@@ -57,35 +59,4 @@ public class Recept {
         this.id = id;
     }
 
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public String getComment() {
-        return comment;
-    }
-
-    public void setComment(String comment) {
-        this.comment = comment;
-    }
-
-    public String getIngredients() {
-        return ingredients;
-    }
-
-    public void setIngredients(String ingredients) {
-        this.ingredients = ingredients;
-    }
-
-    public int getLikings() {
-        return likings;
-    }
-
-    public void setLikings(int likings) {
-        this.likings = likings;
-    }
 }

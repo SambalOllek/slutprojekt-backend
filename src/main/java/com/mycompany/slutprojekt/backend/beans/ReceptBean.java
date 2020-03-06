@@ -27,15 +27,14 @@ public class ReceptBean {
         List<Recept> recepten = new ArrayList();
         try (Connection connection = ConnectionFactory.getConnection()) {
             Statement stmt = connection.createStatement();
-            String sql = "Select * FROM recept";
+            String sql = "Select * FROM recipe";
             ResultSet data = stmt.executeQuery(sql);
             while (data.next()) {
                 Recept recept = new Recept();
                 recept.setId(data.getInt("id"));
-                recept.setCategory(data.getString("category"));
-                recept.setComment(data.getString("comment"));
-                recept.setIngredients(data.getString("ingredients"));
-                recept.setLikings(data.getInt("likings"));
+                recept.setName(data.getString("name"));
+                recept.setDescription(data.getString("description"));
+                recept.setTutorial(data.getString("tutorial"));
                 recepten.add(recept);
                        
             }
