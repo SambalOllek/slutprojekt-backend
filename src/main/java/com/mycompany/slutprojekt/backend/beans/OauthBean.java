@@ -20,7 +20,7 @@ import javax.ws.rs.core.MediaType;
 public class OauthBean {
 
     private final String CLIENT_ID = "c292a6020ce35b214c2e";
-    private final String CLIENTSECRET = "1e3aea21892be07fefecdc15bd6fca80daa11c78";
+    private final String CLIENTSECRET = "8b08695e8baa7d38e97aa037fde017b6d2c9c0ee";
 
     public String getToken(String code) {
         String url = String.format("https://github.com/login/oauth/access_token?client_id=%s&client_secret=%s&code=%s", CLIENT_ID, CLIENTSECRET, code);
@@ -33,6 +33,9 @@ public class OauthBean {
 
     public JsonObject githubAuth(String token) {
         Client client = ClientBuilder.newClient();
+        System.out.println(token);
+        //token = "beb590eed8c7e055301e195e1771f6753e217e4f";
+        System.out.println(token);
         WebTarget target = client.target("https://api.github.com/user?access_token=" + token);
         return target.request(MediaType.APPLICATION_JSON).get(JsonObject.class);
     }
