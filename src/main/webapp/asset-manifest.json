@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6a032797.chunk.css",
+    "main.js": "/static/js/main.00a83f06.chunk.js",
+    "main.js.map": "/static/js/main.00a83f06.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0a266b08.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0a266b08.js.map",
+    "static/js/2.2cfc624d.chunk.js": "/static/js/2.2cfc624d.chunk.js",
+    "static/js/2.2cfc624d.chunk.js.map": "/static/js/2.2cfc624d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.02767cc28bb0eb070a2c367f49312e53.js": "/precache-manifest.02767cc28bb0eb070a2c367f49312e53.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.6a032797.chunk.css.map": "/static/css/main.6a032797.chunk.css.map",
+    "static/js/2.2cfc624d.chunk.js.LICENSE.txt": "/static/js/2.2cfc624d.chunk.js.LICENSE.txt",
+    "static/media/cold.jpg": "/static/media/cold.c20034cb.jpg",
+    "static/media/FirstPage.scss": "/static/media/cooking.5fc295d0.jpg",
+    "static/media/dessert.jpg": "/static/media/dessert.67bd6ffe.jpg",
+    "static/media/hamburger.jpg": "/static/media/hamburger.0f39eccb.jpg",
+    "static/media/hot.jpg": "/static/media/hot.767d44b1.jpg",
+    "static/media/hotdog.jpg": "/static/media/hotdog.91ead9f0.jpg",
+    "static/media/kebab.jpg": "/static/media/kebab.c62d55a4.jpg",
+    "static/media/mugcake.jpg": "/static/media/mugcake.dea7d8f4.jpg",
+    "static/media/pancake.jpg": "/static/media/pancake.d59ea5f6.jpg",
+    "static/media/snacks.jpg": "/static/media/snacks.7dadefb4.jpg",
+    "static/media/wings.jpg": "/static/media/wings.b7241620.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a266b08.js",
+    "static/js/2.2cfc624d.chunk.js",
+    "static/css/main.6a032797.chunk.css",
+    "static/js/main.00a83f06.chunk.js"
+  ]
+}
